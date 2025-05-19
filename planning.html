@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareAhead Planner</title>
+  <link rel="stylesheet" href="planning.css" />
+  <script src="planning.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>CareAhead Planner</h1>
+    <p>Plan your care journey step-by-step</p>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-link active" data-tab="step1">Step 1: Identify</button>
+    <button class="tab-link" data-tab="step2">Step 2: Discuss</button>
+    <button class="tab-link" data-tab="step3">Step 3: Record</button>
+  </nav>
+
+  <main>
+    <section id="step1" class="tab-content active">
+      <h2>Step 1: Identify</h2>
+      <p>Think about your values and what matters most to you in life and healthcare.</p>
+      <form>
+        <label for="values">What are your values?</label>
+        <textarea id="values" name="values" rows="5" placeholder="E.g. independence, comfort, spirituality..."></textarea>
+
+        <label for="preferences">What kind of care would you prefer?</label>
+        <textarea id="preferences" name="preferences" rows="5" placeholder="E.g. avoid aggressive treatment, home care..."></textarea>
+
+        <button type="submit">Save</button>
+      </form>
+    </section>
+
+    <section id="step2" class="tab-content">
+      <h2>Step 2: Discuss</h2>
+      <p>Talk to your loved ones and doctor about your preferences and values.</p>
+      <form>
+        <label for="loved-ones">Who have you spoken to?</label>
+        <textarea id="loved-ones" name="loved-ones" rows="5" placeholder="E.g. spouse, children, healthcare provider..."></textarea>
+
+        <label for="feedback">How did the discussion go?</label>
+        <textarea id="feedback" name="feedback" rows="5" placeholder="E.g. they support my wishes..."></textarea>
+
+        <button type="submit">Save</button>
+      </form>
+    </section>
+
+    <section id="step3" class="tab-content">
+      <h2>Step 3: Record</h2>
+      <p>Document your wishes in an Advance Care Plan or appoint a trusted person as your Nominated Healthcare Spokesperson (NHS).</p>
+      <form>
+        <label for="record">Have you completed an ACP?</label>
+        <textarea id="record" name="record" rows="5" placeholder="E.g. Yes, on 01 May 2025..."></textarea>
+
+        <label for="spokesperson">Have you appointed an NHS?</label>
+        <textarea id="spokesperson" name="spokesperson" rows="5" placeholder="E.g. My daughter, Jane..."></textarea>
+
+        <button type="submit">Save</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="planner.js"></script>
+</body>
+</html>
